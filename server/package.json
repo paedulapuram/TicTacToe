@@ -1,0 +1,10 @@
+{
+  "name": "tic-tac-toe-render-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Render entrypoint for the Tic-Tac-Toe browser game.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
