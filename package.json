@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple browser Tic-Tac-Toe game with X/O turns, win detection, draw detection, scores, and Playwright flow tests.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test:e2e": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "playwright": "latest"
+  }
+}

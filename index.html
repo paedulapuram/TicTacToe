@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-bar">
+        <div class="brand-lockup" aria-label="Tic-Tac-Toe">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="4" y="4" width="56" height="56" rx="10"></rect>
+            <path d="M23 10v44M41 10v44M10 23h44M10 41h44"></path>
+            <path class="brand-x" d="M15 15l12 12M27 15 15 27"></path>
+            <circle class="brand-o" cx="49" cy="49" r="7"></circle>
+          </svg>
+          <div>
+            <h1>Tic-Tac-Toe</h1>
+            <p id="roundStatus" aria-live="polite">X starts the round.</p>
+          </div>
+        </div>
+
+        <div class="toolbar" aria-label="Game controls">
+          <button id="newRoundButton" type="button">New round</button>
+          <button id="clearScoresButton" type="button">Clear scores</button>
+        </div>
+      </header>
+
+      <section class="game-layout" aria-label="Tic-Tac-Toe game">
+        <div class="board-frame">
+          <div id="board" class="board" role="grid" aria-label="3 by 3 game board"></div>
+        </div>
+
+        <aside class="game-panel">
+          <section class="turn-strip" aria-label="Current turn">
+            <span>Turn</span>
+            <strong id="turnLabel">X</strong>
+          </section>
+
+          <section class="scoreboard" aria-label="Scoreboard">
+            <div class="score-item">
+              <span>X</span>
+              <strong id="scoreX">0</strong>
+            </div>
+            <div class="score-item">
+              <span>O</span>
+              <strong id="scoreO">0</strong>
+            </div>
+            <div class="score-item">
+              <span>Draws</span>
+              <strong id="scoreDraws">0</strong>
+            </div>
+          </section>
+
+          <section class="move-log" aria-labelledby="moveLogTitle">
+            <h2 id="moveLogTitle">Moves</h2>
+            <ol id="moveList"></ol>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
